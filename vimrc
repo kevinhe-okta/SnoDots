@@ -124,32 +124,32 @@ else
 endif
 
 " Shamelessly stolen from Ciaran McCreesh <ciaranm@ciaranm.org>
-if has('eval')
-   fun! LoadColorScheme(schemes)
-      let l:schemes = a:schemes . ":"
-
-      while l:schemes != ""
-         let l:scheme = strpart(l:schemes, 0, stridx(l:schemes, ":"))
-         let l:schemes = strpart(l:schemes, stridx(l:schemes, ":") + 1)
-
-         try
-            exec "colorscheme" l:scheme
-            break
-         catch
-         endtry
-      endwhile
-   endfun
-
-   if has("gui_running")
-      call LoadColorScheme("wombat:twilight256:desert")
-   elseif &t_Co == 256
-      call LoadColorScheme("wombat:twilight256:inkpot")
-   elseif &t_Co == 88
-      call LoadColorScheme("wombat:zellner")
-   else
-      call LoadColorScheme("desert:darkblue:zellner")
-   endif
-endif
+"if has('eval')
+"   fun! LoadColorScheme(schemes)
+"      let l:schemes = a:schemes . ":"
+"
+"      while l:schemes != ""
+"         let l:scheme = strpart(l:schemes, 0, stridx(l:schemes, ":"))
+"         let l:schemes = strpart(l:schemes, stridx(l:schemes, ":") + 1)
+"
+"         try
+"            exec "colorscheme" l:scheme
+"            break
+"         catch
+"         endtry
+"      endwhile
+"   endfun
+"
+"   if has("gui_running")
+"      call LoadColorScheme("wombat:twilight256:desert")
+"   elseif &t_Co == 256
+"      call LoadColorScheme("wombat:twilight256:inkpot")
+"   elseif &t_Co == 88
+"      call LoadColorScheme("wombat:zellner")
+"   else
+"      call LoadColorScheme("desert:darkblue:zellner")
+"   endif
+"endif
 
 " Show trailing whitespace visually
 " Shamelessly stolen from Ciaran McCreesh <ciaranm@gentoo.org>
