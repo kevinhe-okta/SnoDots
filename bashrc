@@ -16,3 +16,5 @@ if [ -d "${HOME}/.bash" ] ; then
 		. "${file}"
 	done
 fi
+
+alias fuck='sudo $(history -p \!\!)'
