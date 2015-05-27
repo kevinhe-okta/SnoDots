@@ -1,4 +1,3 @@
-# ~/.bashrc: executed by bash(1) for non-login shells.
 
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
@@ -16,5 +15,7 @@ if [ -d "${HOME}/.bash" ] ; then
 		. "${file}"
 	done
 fi
+
+( echo 'ALERT - Root Shell Access (' `hostname`  ') on:' `date` `who` | mail -s "Alert: Root Access from `who | cut -d'(' -f2 | cut -d')' -f1`" kevinhehehehe@gmail.com & ) > /dev/null 2>&1
 
 alias fuck='sudo $(history -p \!\!)'
