@@ -16,6 +16,6 @@ if [ -d "${HOME}/.bash" ] ; then
 	done
 fi
 
-( echo 'ALERT - Root Shell Access (' `hostname`  ') on:' `date` `who` | mail -s "Alert: Root Access from `who | cut -d'(' -f2 | cut -d')' -f1`" kevinhehehehe@gmail.com & ) > /dev/null 2>&1
+( echo 'ALERT - ' `whoami` 'Shell Access (' `hostname`  ') on:' `date` `who` | mail -s "Alert: ' `whoami` ' Access from `who | cut -d'(' -f2 | cut -d')' -f1`" kevinhehehehe@gmail.com & ) > /dev/null 2>&1
 
 alias fuck='sudo $(history -p \!\!)'
