@@ -8,4 +8,5 @@ git clone https://github.com/kevinhe-okta/SnoDots.git
 cp -r ~/SnoDots/vim ~/.vim
 cp ~/SnoDots/vimrc ~/.vimrc
 cp ~/SnoDots/screenrc ~/.screenrc
+cp ~/SnoDots/tmux.conf ~/.tmux.conf
 cat ~/SnoDots/bashrc > ~/.bashrc
