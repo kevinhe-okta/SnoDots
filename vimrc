@@ -169,7 +169,7 @@ endif
 
 if has('mouse')
    " Dont copy the listchars when copying
-   set mouse=nvi
+   set mouse-=a
 endif
 
 if has('autocmd')
